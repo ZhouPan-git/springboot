@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>银行余额</title>
+</head>
+<body>
+<div>尊敬的<span th:text="${username}" style="font-size: 20px;color: red">XXX</span>先生：</div>
+<p style="text-indent: 2em">您的银行余额为: <span th:text="${balance}" style="color: cornflowerblue;font-size: 15px">0.00</span>，请确认。</p>
+<p>当前时间为：<span th:text="${currentTime}" style="color: darkgreen">2023-08-15 12:00:00</span></p>
+<p>祝您生活愉快！</p>
+<p style="margin-left: 250px">Yours   周盼</p>
+</body>
+</html>
